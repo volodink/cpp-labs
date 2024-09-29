@@ -1,7 +1,10 @@
 #include <iostream>
-
+#include "User.hpp"
 
 int main() {
-	std::cout << "Hello!" << std::endl;
+	User* user = new User();
+	std::cout << user->getName() << std::endl;
+	user->setName("Ivan Returnovich");
+	std::cout << user->getName() << std::endl;
 	return 0;
 }
